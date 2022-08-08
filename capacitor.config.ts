@@ -1,9 +1,9 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'photo-gallery-test',
-  webDir: 'dist',
+  appId: 'com.splendidabbey.vuememories',
+  appName: 'vue memories',
+  webDir: 'public',
   bundledWebRuntime: false
 };
 

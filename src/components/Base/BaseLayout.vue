@@ -1,0 +1,35 @@
+<template>
+  <ion-page>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button :default-href="pageBackLink"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{ pageTitle}}</ion-title>
+        <ion-buttons slot="end">
+          <slot name="actions-end"></slot>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <slot />
+    </ion-content>
+  </ion-page>
+</template>
+
+<script>
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton, IonContent} from '@ionic/vue'
+
+export default {
+  props: ['pageTitle', 'pageBackLink'],
+  components: {
+    IonPage,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonButtons,
+    IonBackButton,
+    IonContent
+  }
+}
+</script>
